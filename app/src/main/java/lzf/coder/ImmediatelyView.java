@@ -79,6 +79,14 @@ public class ImmediatelyView extends View implements View.OnClickListener{
         }
     }
 
+    public void setFavor(boolean favor) {
+        isFavor = favor;
+    }
+
+    public void setCurrentNum(int currentNum) {
+        this.currentNum = currentNum;
+    }
+
     private void initNumber() {
         //如果已经点赞了 只能取消 即数字只能减
         if (isFavor){

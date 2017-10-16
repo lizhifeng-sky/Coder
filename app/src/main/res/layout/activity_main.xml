@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="9dp"
-        android:text="选择一种折叠方式点击图片" />
+        android:text="FoldView 选择一种折叠方式点击图片" />
 
     <lzf.coder.FoldView
         android:id="@+id/fold"
@@ -53,4 +53,43 @@
         android:layout_below="@id/right"
         android:padding="10dp"
         android:text="下" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottom"
+        android:padding="9dp"
+        android:text="ImmediatelyView 输入一个数字 选择是否喜欢 进行切换" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:layout_toRightOf="@id/input"
+        android:text="是否喜欢" />
+
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:layout_toRightOf="@id/checkbox"
+        android:layout_marginLeft="18dp"
+        android:padding="9dp"
+        android:text="开始" />
+
+    <lzf.coder.ImmediatelyView
+        android:id="@+id/immediately"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input" />
 </RelativeLayout>
